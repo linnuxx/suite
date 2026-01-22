@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AwixNodes - game hosting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo game-font">AwixNodes</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="game-font">Главная</a></li>
+                <li><a href="#pricing" class="game-font">Купить</a></li>
+                <li><a href="#contacts" class="game-font">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="game-font">AwixNodes</h1>
+            <p>игровой хостинг для ваших серверов Minecraft, CS:GO и других игр.</p>
+            <a href="#pricing" class="btn game-font"></a>
+        </div>
+    </section>
+    
+    <section class="scrolling-text">
+        <div class="scrolling-text-content">
+            <div class="scrolling-text-item game-font"></div>
+            <div class="scrolling-text-item game-font"></div>
+            <div class="scrolling-text-item game-font"></div>
+            <div class="scrolling-text-item game-font"></div>
+            <div class="scrolling-text-item game-font"></div>
+            <div class="scrolling-text-item game-font"></div>
+        </div>
+    </section>
+    
+    <section class="pricing" id="pricing">
+        <h2 class="game-font">Наши Тарифы</h2>
+        
+        
+        <div class="pricing-category">
+            <h3 class="category-title java-title game-font">Java Edition</h3>
+            <div class="pricing-grid">
+			                <div class="pricing-card java-card">
+                    <h3 class="game-font"></h3>
+					<h4 class="game-font"></h3>
+                </div>
+			
+                <div class="pricing-card java-card" onclick="openModal('java-start')">
+                    <h3 class="game-font">Java Start</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>1 ГБ RAM</li>
+                        <li>1 Ядро CPU</li>
+                        <li>10 ГБ SSD</li>
+                      
+                      
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card java-card" onclick="openModal('java-medium')">
+                    <h3 class="game-font">Java Medium</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>2 ГБ RAM</li>
+                        <li>2 Ядра CPU</li>
+                        <li>20 ГБ SSD</li>
+                       
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card java-card" onclick="openModal('java-pro')">
+                    <h3 class="game-font">Java Pro</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>3 ГБ RAM</li>
+                        <li>2 Ядра CPU</li>
+                        <li>30 ГБ SSD</li>
+                       
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card java-card" onclick="openModal('java-advanced')">
+                    <h3 class="game-font">Java Advanced</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>4 ГБ RAM</li>
+                        <li>3 Ядра CPU</li>
+                        <li>40 ГБ SSD</li>
+                   
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card java-card" onclick="openModal('java-expert')">
+                    <h3 class="game-font">Java Expert</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>6 ГБ RAM</li>
+                        <li>4 Ядра CPU</li>
+                        <li>60 ГБ SSD</li>
+                      
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card java-card" onclick="openModal('java-ultimate')">
+                    <h3 class="game-font">Java Ultimate</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>8 ГБ RAM</li>
+                        <li>6 Ядер CPU</li>
+                        <li>80 ГБ SSD</li>
+                    
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card java-card" onclick="openModal('java-premium')">
+                    <h3 class="game-font">Java Premium</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>10 ГБ RAM</li>
+                        <li>6 Ядер CPU</li>
+                        <li>100 ГБ SSD</li>
+                     
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card java-card" onclick="openModal('java-extreme')">
+                    <h3 class="game-font">Java Extreme</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>16 ГБ RAM</li>
+                        <li>8 Ядер CPU</li>
+                        <li>150 ГБ SSD</li>
+                      
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="pricing-category">
+            <h3 class="category-title bedrock-title game-font">Bedrock/PE Edition</h3>
+            <div class="pricing-grid">
+                <div class="pricing-card bedrock-card" onclick="openModal('bedrock-start')">
+                    <h3 class="game-font">Bedrock Start</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>1 ГБ RAM</li>
+                        <li>1 Ядро CPU</li>
+                        <li>10 ГБ SSD</li>
+                      
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card bedrock-card" onclick="openModal('bedrock-medium')">
+                    <h3 class="game-font">Bedrock Medium</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>2 ГБ RAM</li>
+                        <li>1 Ядро CPU</li>
+                        <li>15 ГБ SSD</li>
+                    
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card bedrock-card" onclick="openModal('bedrock-pro')">
+                    <h3 class="game-font">Bedrock Pro</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>3 ГБ RAM</li>
+                        <li>2 Ядра CPU</li>
+                        <li>25 ГБ SSD</li>
+                      
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card bedrock-card" onclick="openModal('bedrock-advanced')">
+                    <h3 class="game-font">Bedrock Advanced</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>4 ГБ RAM</li>
+                        <li>2 Ядра CPU</li>
+                        <li>35 ГБ SSD</li>
+                     
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card bedrock-card" onclick="openModal('bedrock-expert')">
+                    <h3 class="game-font">Bedrock Expert</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>5 ГБ RAM</li>
+                        <li>3 Ядра CPU</li>
+                        <li>50 ГБ SSD</li>
+                     
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card bedrock-card" onclick="openModal('bedrock-ultimate')">
+                    <h3 class="game-font">Bedrock Ultimate</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>6 ГБ RAM</li>
+                        <li>4 Ядра CPU</li>
+                        <li>70 ГБ SSD</li>
+                        
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card bedrock-card" onclick="openModal('bedrock-premium')">
+                    <h3 class="game-font">Bedrock Premium</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>8 ГБ RAM</li>
+                        <li>6 Ядер CPU</li>
+                        <li>100 ГБ SSD</li>
+                       
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+            </div>
+        </div>
+        
+       
+        <div class="pricing-category">
+            <h3 class="category-title proxy-title game-font">Proxy Minecraft</h3>
+            <div class="pricing-grid">
+                <div class="pricing-card proxy-card" onclick="openModal('proxy-basic')">
+                    <h3 class="game-font">Proxy Basic</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>100 слотов</li>
+                        <li>1 ГБ RAM</li>
+                        <li></li>
+                        <li>Поддержка BungeeCord/Velocity/Waterfall/NullCordX</li>
+
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card proxy-card" onclick="openModal('proxy-standard')">
+                    <h3 class="game-font">Proxy Standard</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>200 слотов</li>
+                        <li>2 ГБ RAM</li>
+                        <li></li>
+                        <li>Поддержка BungeeCord/Velocity/Waterfall/NullCordX</li>
+                        
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card proxy-card" onclick="openModal('proxy-professional')">
+                    <h3 class="game-font">Proxy Professional</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>300 слотов</li>
+                        <li>3 ГБ RAM</li>
+                        <li></li>
+                        <li>Поддержка BungeeCord/Velocity/Waterfall/NullCordX</li>
+                        
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card proxy-card" onclick="openModal('proxy-enterprise')">
+                    <h3 class="game-font">Proxy Enterprise</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>500 слотов</li>
+                        <li>4 ГБ RAM</li>
+                        <li></li>
+                        <li>Поддержка BungeeCord/Velocity/Waterfall/NullCordX</li>
+                        
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="pricing-category">
+            <h3 class="category-title python-title game-font">Python хостинг</h3>
+            <div class="pricing-grid">
+                <div class="pricing-card python-card" onclick="openModal('python-basic')">
+                    <h3 class="game-font">Python Basic</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>1 ГБ RAM</li>
+                        <li>1 Ядро CPU</li>
+                        <li>15 ГБ SSD</li>
+                        <li></li>
+                        <li>Поддержка Python 3.8+</li>
+                        
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card python-card" onclick="openModal('python-standard')">
+                    <h3 class="game-font">Python Standard</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>2 ГБ RAM</li>
+                        <li>2 Ядра CPU</li>
+                        <li>30 ГБ SSD</li>
+                        <li></li>
+                        <li>Поддержка Python 3.8+</li>
+                        
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card python-card" onclick="openModal('python-professional')">
+                    <h3 class="game-font">Python Professional</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>4 ГБ RAM</li>
+                        <li>3 Ядра CPU</li>
+                        <li>50 ГБ SSD</li>
+                        <li></li>
+                        <li>Поддержка Python 3.8+</li>
+                        
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-card python-card" onclick="openModal('python-enterprise')">
+                    <h3 class="game-font">Python Enterprise</h3>
+                    <div class="price">1₽ <span>/месяц</span></div>
+                    <ul>
+                        <li>6 ГБ RAM</li>
+                        <li>4 Ядра CPU</li>
+                        <li>80 ГБ SSD</li>
+                        <li></li>
+                        <li>Поддержка Python 3.8+</li>
+                        
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contacts" id="contacts">
+        <h2 class="game-font">Контакты</h2>
+        <p>Свяжитесь с нами любым удобным способом</p>
+        
+        <div class="social-links">
+            <a href="#" class="social-link vk-link" target="_blank">
+                <i class="fab fa-vk"></i>
+            </a>
+            <a href="#" class="social-link tg-link" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="mailto:#" class="social-link email-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 AwixNodes. Все права защищены.</p>
+    </footer>
+    
+    
+    <div id="java-start" class="modal java-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('java-start')">&times;</span>
+            <h3 class="game-font">Java Start</h3>
+            <div class="price">1₽ <span>/месяц</span></div>
+            <ul>
+                <li>1 ГБ RAM</li>
+                <li>1 Ядро CPU</li>
+                <li>10 ГБ SSD</li>
+                
+            </ul>
+            <button class="btn">Купить сейчас</button>
+        </div>
+    </div>
+    
+    
+    
+<script src="script.js"></script>
+</body>
+</html>
